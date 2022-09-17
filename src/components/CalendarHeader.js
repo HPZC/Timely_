@@ -19,7 +19,7 @@ export default function CalendarHeader() {
     );
   }
   return (
-    <header className="px-4 py-3 flex items-center">
+    <header className="flex-col px-4 py-3 flex  items-center md:flex-col lg:flex-row lg:items-center">
       <img src={logo} alt="calendar" className="mr-2 w-12 h-12" />
       <h1 className="mr-10 text-3xl font-bold text-white fond-bold">
         TIMELY 
@@ -32,7 +32,7 @@ export default function CalendarHeader() {
       >
         Today
       </button>
-      
+      <div className="flex flex-row ">
       <button onClick={handlePrevMonth}>
         <span className="material-icons-outlined cursor-pointer rounded-full bg-white  text-gray-600 mx-2">
           chevron_left
@@ -48,6 +48,9 @@ export default function CalendarHeader() {
           chevron_right
         </span>
       </button>
+      </div>
+      
+      
       
       <h1 className="px-2 pb-1">Slogan - </h1>
       
