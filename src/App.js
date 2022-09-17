@@ -22,7 +22,7 @@ function App() {
 
       <div className=" bg-black text-white h-screen flex flex-col">
         <CalendarHeader />
-        <div className="animate__animated animate__fadeInRight flex flex-1">
+        <div className=" flex flex-1">
           <Sidebar />
           <Month month={currenMonth} />
         </div>
