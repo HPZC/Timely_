@@ -2,6 +2,7 @@ import dayjs from "dayjs";
 import React, { useContext } from "react";
 import Typewriter from "typewriter-effect";
 import logo from "../assets/logo.png";
+import "animate.css"
 import GlobalContext from "../context/GlobalContext";
 export default function CalendarHeader() {
   const { monthIndex, setMonthIndex } = useContext(GlobalContext);
@@ -20,17 +21,17 @@ export default function CalendarHeader() {
   }
   return (
     <header className="flex-col px-4 py-3 flex  items-center md:flex-col lg:flex-row lg:items-center">
-      <img src={logo} alt="calendar" className="mr-2 w-12 h-12" />
-      <h1 className="mr-10 text-3xl font-bold text-white fond-bold">
+      <img src={logo} alt="calendar" className="animate__animated animate__fadeInRight mr-2 w-12 h-12" />
+      <h1 className="mr-10 text-3xl font-bold animate__animated animate__fadeInRight text-white fond-bold">
         TIMELY 
       </h1>
       <button
         onClick={handleReset}
-        className="hover:bg-white hover:text-black transition-all ease-in-out border rounded py-2 px-4 mr-5"
+        className="animate__animated animate__fadeInRight hover:bg-white hover:text-black transition-all ease-in-out border rounded py-2 px-4 mr-5"
       >
         Today
       </button>
-      <div className="flex flex-row ">
+      <div className="flex flex-row animate__animated animate__fadeInRight">
       <button onClick={handlePrevMonth}>
         <span className="material-icons-outlined cursor-pointer rounded-full bg-white  text-gray-600 mx-2">
           chevron_left
@@ -50,8 +51,8 @@ export default function CalendarHeader() {
       
       
       
-      <h1 className="px-2 pb-1">Slogan - </h1>
-      <div className="text-3xl pb-1">
+      <h1 className="px-2 pb-1 animate__animated animate__fadeInRight">Slogan - </h1>
+      <div className="text-3xl pb-1 animate__animated animate__fadeInRight">
       <Typewriter
             
             options={{

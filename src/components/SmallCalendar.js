@@ -2,6 +2,7 @@ import dayjs from "dayjs";
 import React, { useContext, useEffect, useState } from "react";
 import GlobalContext from "../context/GlobalContext";
 import { getMonth } from "../util";
+import "animate.css"
 
 export default function SmallCalendar() {
   const [currentMonthIdx, setCurrentMonthIdx] = useState(
@@ -43,7 +44,7 @@ export default function SmallCalendar() {
     }
   }
   return (
-    <div className=" mt-9">
+    <div className="animate__animated animate__fadeInLeft animate__delay-1s mt-9">
       <header className="flex justify-between">
         
         <div className="flex px-7">

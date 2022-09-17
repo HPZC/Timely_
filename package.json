@@ -8,6 +8,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "add-gitignore": "^1.1.1",
+    "animate.css": "^4.1.1",
     "autoprefixer": "^9.8.8",
     "dark-mode-light-mode": "^1.4.1",
     "dark-mode-toggle": "^0.14.2",
