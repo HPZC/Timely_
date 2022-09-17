@@ -24,8 +24,6 @@ export default function CalendarHeader() {
       <h1 className="mr-10 text-3xl font-bold text-white fond-bold">
         TIMELY 
       </h1>
-     
-      
       <button
         onClick={handleReset}
         className="hover:bg-white hover:text-black transition-all ease-in-out border rounded py-2 px-4 mr-5"
@@ -38,7 +36,7 @@ export default function CalendarHeader() {
           chevron_left
         </span>
       </button>
-      <h2 className="mb-1 text-2xl text-white font-bold">
+      <h2 className="w-52 text-center mb-1 text-2xl text-white font-bold">
         {dayjs(new Date(dayjs().year(), monthIndex)).format(
           "MMMM YYYY"
         )}
@@ -53,7 +51,6 @@ export default function CalendarHeader() {
       
       
       <h1 className="px-2 pb-1">Slogan - </h1>
-      
       <div className="text-3xl pb-1">
       <Typewriter
             
